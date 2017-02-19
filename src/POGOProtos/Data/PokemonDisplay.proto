@@ -1,11 +1,13 @@
 syntax = "proto3";
 package POGOProtos.Data;
 
-message PokemonDisplay {
-	.POGOProtos.Data.PokemonDisplay.Costume costume = 1;
+import "POGOProtos/Enums/Costume.proto";
+import "POGOProtos/Enums/Form.proto";
+import "POGOProtos/Enums/Gender.proto";
 
-	enum Costume {
-		UNSET = 0;
-		HOLIDAY_2016 = 1;
-	}
+message PokemonDisplay {
+	.POGOProtos.Enums.Costume costume = 1;
+	.POGOProtos.Enums.Gender gender = 2;
+	bool shiny = 3;
+	.POGOProtos.Enums.Form form = 4;
 }

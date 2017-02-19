@@ -10,4 +10,9 @@ enum Slot {
 	SHOES = 5;
 	EYES = 6;
 	BACKPACK = 7;
+	GLOVES = 8;
+	SOCKS = 9;
+	BELT = 10;
+	GLASSES = 11;
+	NECKLACE = 12;
 }
